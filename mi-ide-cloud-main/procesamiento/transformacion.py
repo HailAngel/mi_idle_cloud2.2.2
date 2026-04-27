@@ -5,8 +5,8 @@ def transformar_datos(almacen_datos):
     # 1. Tabla resumen de sobrevivientes del Titanic
     print("  > Resumen de sobrevivientes Titanic...")
     df_titanic = almacen_datos['Titanic']
-    resumen_titanic = df_titanic.groupby('Survived').size().reset_index(name='Conteo')
-    resumen_titanic['Survived'] = resumen_titanic['Survived'].map({0: 'No sobrevivió', 1: 'Sobrevivió'})
+    resumen_titanic = df_titanic.groupby('2urvived').size().reset_index(name='Conteo')
+    resumen_titanic['2urvived'] = resumen_titanic['2urvived'].map({0: 'No sobrevivió', 1: 'Sobrevivió'})
     almacen_datos['Titanic_Resumen'] = resumen_titanic
 
     # 2. Columna UniqueKey en Libros
